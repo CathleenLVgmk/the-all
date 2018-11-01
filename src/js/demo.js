@@ -7,3 +7,8 @@ var Bscroll = new BScroll('.h_b', {
 $('.h_b ul').on('click', 'li', function() {
     $(this).addClass('active').siblings().removeClass('active');
 })
+var myswiper = new Swiper('.swiper-container', {
+    pagination: {
+        el: '.swiper-pagination'
+    }
+})
