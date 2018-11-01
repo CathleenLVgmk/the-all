@@ -133,3 +133,31 @@ section {
         }
     }
 }
+
+footer {
+    width: 100%;
+    height: pxTorem(50px);
+    ul {
+        width: 100%;
+        height: 100%;
+        @include box_flex;
+        @include justify(space-between);
+        padding: pxTorem(8px);
+        li {
+            flex: 1;
+            @include box_flex;
+            @include direction(column);
+            @include justify(space-between);
+            @include align;
+            i {
+                font-size: pxTorem(18px)!important;
+            }
+        }
+        li.active {
+            i,
+            span {
+                color: red;
+            }
+        }
+    }
+}
